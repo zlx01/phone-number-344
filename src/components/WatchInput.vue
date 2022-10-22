@@ -1,14 +1,14 @@
 <template>
-  <div class="about">
-    <!-- 输入手机号，调起手机号键盘 -->
-    <!--tel可以输入数字，字母，中文，不能输入空白，但值可以包含空白-->
-    <!--digit只能输入数字，无法输入空白，值也不能包含空白-->
-    <van-field
-      v-model="phoneNumberInput"
-      type="tel"
-      label="手机号"
-      maxlength="13"
-    />
+  <div>
+    <van-cell-group>
+      <van-field
+        v-model="phoneNumberInput"
+        type="tel"
+        label="手机号"
+        maxlength="13"
+        placeholder="请输入手机号"
+      />
+    </van-cell-group>
   </div>
 </template>
 
